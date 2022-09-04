@@ -1,0 +1,146 @@
+/*========== GOOGLE FONT ==========*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap');
+
+/*========== VARIABLE CSS ==========*/
+:root {
+    --header-height: 8rem;
+    --header-shrink-height: 5rem;
+    --border-radius: 0.5rem;
+    --mobile-width: 600px;
+    --tablet-width: 1024px;
+
+    /*========== Colors ==========*/
+    /*Color mode HSL(hue, saturation, lightness)*/
+    --first-color: #0d253f ;
+    --secondary-color :#01b4e4 ;
+    --tertiary-color:#90cea1 ;
+    --text-color:#eee ;
+    --title-color:#0d253f;
+    --white-color: #fff;
+    --box-shadow: rgba(100, 100, 111, 0.2) 0 7px 7px 0;
+
+    /*========== Font and typography ==========*/
+    /*.5rem = 8px | 1rem = 16px ...*/
+    --body-font: 'Montserrat', sans-serif;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+
+    /*========== Font weight ==========*/
+    --font-medium: 500;
+    --font-semi-bold: 600;
+
+    /*========== z index ==========*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
+
+
+
+/*========== BASE ==========*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
+h1,
+h2,
+h3 {
+    color: var(--title-color);
+    font-weight: 700;
+}
+
+h4{
+    color: var(--title-color);
+    font-weight: 700;
+
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+iframe{
+    border:none;
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+
+.container {
+    margin-right:2rem;
+    margin-left: 2rem;
+}
+
+.section__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 0;
+}
+
+.section__header h3{
+    display: flex;
+    font-size: 1.2rem;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.section__header h3 i{
+    color: #01b4e4;
+    font-size: 1.5rem;
+}
+
+
+
+@media screen and (max-width:600px) {
+
+    .container{
+       margin-top:3.5rem;
+       margin-bottom: 8rem;
+       margin-left: 1rem;
+       margin-right: 1rem;
+    }
+    
+    .section__header h3{
+        font-size: 1rem;
+        gap: 0.3rem;
+    }
+
+    .btn.small{
+        background-color: transparent;
+        padding: 0;
+    }
+
+    .btn.small i{
+       color:var(--first-color);
+       font-size: 1.2rem;
+    }
+    
+}

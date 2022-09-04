@@ -1,0 +1,39 @@
+.movie__card {
+    position: relative;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 160%;
+    border-radius: var(--border-radius);
+    margin-bottom: 1rem;
+    transition: opacity 0.6s ease;
+}
+
+.movie__card-box h4{
+    font-size: 0.875rem;
+}
+
+
+.movie__card .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.movie__card:hover{
+    opacity: 0.7;
+}
+
+.movie__card:hover .btn{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+@media screen and (max-width:600px) {
+    .movie__card-box h3{
+        font-size: 0.7rem;
+    }
+    
+}

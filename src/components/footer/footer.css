@@ -1,0 +1,144 @@
+.footer {
+    background-color: var(--first-color);
+    position: relative;
+    padding: 3rem 2.5rem;
+}
+
+
+.footer__content {
+    margin: 0 auto;
+    display: grid;
+}
+
+.footer_content-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.footer_content-logo img {
+    width: 5rem;
+}
+
+.footer__content-menus {
+    width: 60%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 0.5fr);
+}
+
+.footer__content-menu {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+.footer__content-menu h3 {
+    color: var(--secondary-color);
+    margin: 0.6rem 0;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.footer__content-menu a {
+    color: var(--withe-color);
+    margin: 0.2rem 0;
+    text-align: center;
+    transition: .3s ease;
+}
+
+.footer__content-menu a:hover {
+    color: var(--secondary-color);
+}
+
+.copy__footer {
+    text-align: center;
+    margin-top: 3rem;
+
+}
+
+.footer__socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.footer__socials i {
+    color: var(--secondary-color);
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0 0.5rem;
+    transition: .3s ease;
+}
+
+
+
+@media only screen and (max-width: 959px) {
+    .footer__content-menus {
+        width: 80%;
+    }
+}
+
+
+
+
+@media screen and (max-width:600px) {
+    .footer {
+        padding: 3rem 0;
+    }
+
+    .footer_content-logo {
+        width: 80%;
+        justify-content: flex-start;
+        margin: 0 auto;
+    }
+
+    .footer__content-menus {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer__content-menus {
+        width: 80%;
+    }
+
+    .footer__content-menu h3 {
+        text-align: left;
+        font-size: 1.1rem;
+    }
+
+    .footer__content-menu a {
+        text-align: left;
+        font-size: 0.9rem;
+    }
+
+
+    .footer__socials {
+        width: 80%;
+        margin: 0 auto;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .footer__socials i {
+        color: var(--secondary-color);
+        font-size: 1.8rem;
+        cursor: pointer;
+        padding: 2rem 0.5rem 0 0 ;
+        transition: .3s ease;
+    }
+
+    .copy__footer {
+        width: 80%;
+        margin: 0 auto;
+        text-align: left;
+        margin-top: 2rem;
+        margin-bottom:5rem;
+        font-size: 0.68rem;
+    }
+
+}

@@ -1,0 +1,17 @@
+.movie__list .swiper-slide {
+    width: 15%;
+}
+
+
+@media only screen and (max-width: 959px) {
+
+    .movie__list .swiper-slide {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .movie__list .swiper-slide {
+        width: 40%;
+    }
+}

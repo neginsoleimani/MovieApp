@@ -1,0 +1,27 @@
+.page__header {
+    padding: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    background: rgb(1, 180, 228);
+    background: linear-gradient(90deg, rgba(1, 180, 228, 1) 0%, rgba(144, 206, 161, 1) 64%);
+}
+
+.page__header h2 {
+    margin-top: 3rem;
+    color: #fff;
+    font-size: 2rem;
+}
+
+@media screen and (max-width:600px) {
+    .page__header {
+        padding: 4rem;
+    }
+
+    .page__header h2 {
+        margin-top: 4rem;
+        font-size: 1.8rem;
+    }
+}

@@ -1,0 +1,23 @@
+input {
+    border: none;
+    background-color: var(--first-color);
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    outline: none;
+    color: var(--white-color);
+    font-family: var(--body-font);
+    width: 60%;
+    border-radius: var(--border-radius);
+}
+
+::placeholder{
+    color:var(--white-color);
+}
+
+@media screen and (max-width:600px) {
+    input {
+        width: 80%;
+    }
+    
+
+}
