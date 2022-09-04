@@ -3,6 +3,8 @@
 <img src="/preview.png" width="100%"></img> 
 </br>
 
+* Use a VPN to view website
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
